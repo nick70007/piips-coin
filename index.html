@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Piips coin</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/fav-icon.png"
+      type="image/x-icon"
+    />
+    <!-- CSS Libraries -->
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <nav class="position-relative">
+            <div class="brand-logo nav-open d-block d-xl-none">
+              <img src="assets/images/logo.png" alt="" />
+            </div>
+            <ul class="nav-wrapper order-1">
+              <li class="d-block d-xl-none">
+                <a
+                  href="#home"
+                  class="nav-link"
+                  >Home</a
+                >
+              </li>
+              <li class="d-block d-xl-none">
+                <a
+                  href="#chOne"
+                  class="nav-link"
+                  >Chapter 1</a
+                >
+              </li>
+              <li class="d-block d-xl-none">
+                <a
+                  href="#chTwo"
+                  class="nav-link"
+                  >Chapter 2</a
+                >
+              </li>
+              <li class="d-block d-xl-none">
+                <a
+                  href="#chThree"
+                  class="nav-link"
+                  >Chapter 3</a
+                >
+              </li>
+              <li class="d-block d-xl-none">
+                <a
+                  href="#chFour"
+                  class="nav-link"
+                  >Chapter 4</a
+                >
+              </li>
+              <li class="d-block d-xl-none">
+                <a
+                  href="#howBuy"
+                  class="nav-link"
+                  >How To Buy</a
+                >
+              </li>
+              <li class="d-block d-xl-none">
+                <a
+                  href="#faq"
+                  class="nav-link"
+                  >FAQs</a
+                >
+              </li>
+              <li class="d-block d-xl-none">
+                <a
+                  href="staking.html"
+                  class="nav-link"
+                  >Staking</a
+                >
+              </li>
+              <li class="d-none d-xl-block">
+                <a
+                  href="#"
+                  class="nav-link active"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  >Home</a
+                >
+              </li>
+              <li class="d-none d-xl-block">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Chapters
+                  <span><img src="assets/images/down-icon.svg" alt="" /></span
+                ></a>
+                <ul class="dropdown-menu chapter-menu">
+                  <li>
+                    <button
+                      class="dropdown-item active"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    >
+                      Chapter 1
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    >
+                      Chapter 2
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    >
+                      Chapter 3
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="4"
+                      aria-label="Slide 5"
+                    >
+                      Chapter 4
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="d-none d-xl-block">
+                <a
+                  href="#"
+                  class="nav-link"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                  >How To Buy</a
+                >
+              </li>
+              <li class="d-none d-xl-block">
+                <a
+                  href="#"
+                  class="nav-link"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="6"
+                  aria-label="Slide 7"
+                  >FAQs</a
+                >
+              </li>
+              <li class="d-none d-xl-block">
+                <a
+                  href="staking.html"
+                  class="nav-link"
+                  >Staking</a
+                >
+              </li>
+              <li class="w-100 d-block d-xl-none">
+                <button class="pi-btn green w-100">Audit</button>
+              </li>
+              <li class="w-100 d-block d-xl-none">
+                <button class="pi-btn red w-100">White Paper</button>
+              </li>
+              <li class="w-100 d-block d-xl-none">
+                <button class="pi-btn yellow w-100" type="button" data-bs-toggle="modal" data-bs-target="#buyPiips">BUY Piips</button>
+              </li>
+            </ul>
+          </nav>
+          <a class="brand-logo d-none d-xl-block">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <div class="button-group order-2">
+            <button class="d-none d-xl-flex pi-btn green">Audit</button>
+            <button class="d-none d-xl-flex pi-btn red">White Paper</button>
+            <button class="d-none d-xl-flex pi-btn yellow" type="button" data-bs-toggle="modal" data-bs-target="#buyPiips">BUY Piips</button>
+            <div class="dropdown">
+              <button
+                class="pi-btn lang-btn dropdown-toggle px-2"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="lang-flag-icon"
+                  ><img src="assets/images/EN.svg" alt=""
+                /></span>
+                EN <span><img src="assets/images/down-icon.svg" alt="" /></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center gap-2"
+                    type="button"
+                  >
+                    <span class="lang-flag-icon"
+                      ><img src="assets/images/IN.svg" alt=""
+                    /></span>
+                    IN
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center gap-2"
+                    type="button"
+                  >
+                    <span class="lang-flag-icon"
+                      ><img src="assets/images/AE.svg" alt=""
+                    /></span>
+                    AE
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center gap-2"
+                    type="button"
+                  >
+                    <span class="lang-flag-icon"
+                      ><img src="assets/images/JP.svg" alt=""
+                    /></span>
+                    JP
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main position-relative">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-interval="1000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="home">
+            <section class="home-main home">
+              <div class="cash-floating dol-1">
+                <img src="assets/images/cash-1.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-2">
+                <img src="assets/images/cash-2.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-3">
+                <img src="assets/images/cash-3.svg" alt="" />
+              </div>
+              <div class="plane-animation">
+                <div class="plane-img">
+                  <img
+                    src="assets/images/aero-plane.png"
+                    alt=""
+                    class="plane"
+                  />
+                  <img src="assets/images/pip-intro.png" alt="" class="intro" />
+                </div>
+              </div>
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-lg-6 order-0 order-xl-0 col-xl-4 position-relative">
+                    <div class="main-ch-img-wrapper">
+                      <div class="main-ch-img">
+                        <img src="assets/images/main-charector.png" alt="" />
+                      </div>
+                      <div class="pop-star">
+                        <img
+                          src="assets/images/pop-star.png"
+                          alt=""
+                          class="poping"
+                        />
+                        <img
+                          src="assets/images/dol-sign.png"
+                          alt=""
+                          class="dol-sign"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 order-1 order-xl-1 col-xl-4">
+                    <div class="pips-info-wrapper">
+                      <div class="pips-info">
+                        <h1>Piips Token</h1>
+                        <h2>Wall Street Pepe</h2>
+                      </div>
+                      <div
+                        class="d-flex flex-column align-items-center gap-3 mx-auto"
+                      >
+                        <ul class="pepe-info-items text-sm-center">
+                          <li>Piips Community: Choose rich together!</li>
+                          <li>Piips Token Insights: Trade like a pro!</li>
+                          <li>Piips Picks: Mad degen plays!</li>
+                        </ul>
+                        <div class="music-box-wrapper">
+                          <div class="wave-wrapper">
+                            <img
+                              src="assets/images/music-wave.svg"
+                              alt=""
+                              class="music-wave"
+                            />
+                          </div>
+
+                          <img
+                            src="assets/images/mosic-box.svg"
+                            alt=""
+                            class="music-box"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 order-2 order-xl-2">
+                    <div class="staking-box">
+                      <div class="box-heading">
+                        <h3>BUY Piips</h3>
+                        <div class="stake-details">
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-basket.svg" alt="" />
+                            </div>
+                            <span>= 500K</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-mine.svg" alt="" />
+                            </div>
+                            <span>= 50M</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="staking-details">
+                        <h3>1 Piips = $0.0003644</h3>
+                        <span class="badge">UNTIL Next PRICE increase</span>
+                      </div>
+                      <div class="timer-wrapper">
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Days</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Hours</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Min</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Sec</span>
+                        </div>
+                      </div>
+                      <p class="all-usd">
+                        USDT Raised: $27,244,567.93 / $27,935,535
+                      </p>
+                      <div class="stake-action-btn">
+                        <button class="action-btn mx-auto">
+                          BUY WITH CARD
+                        </button>
+                        <button class="action-btn mx-auto">
+                          BUY WITH CRYPTO
+                        </button>
+                        <button
+                          class="text-decoration-underline link-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"
+                        >
+                          Don’t have a wallet?
+                        </button>
+                      </div>
+                      <div class="social-link">
+                        <a href="#"
+                          ><img src="assets/images/icon-tele.svg" alt=""
+                        /></a>
+                        <hr />
+                        <a href="#">
+                          <img src="assets/images/icon-x.svg" alt="" />
+                        </a>
+                      </div>
+                      <div class="discount-wrapper">
+                        <img src="assets/images/icon-star.svg" alt="" />
+                        <p class="dic-text">
+                          40% <br />
+                          <span>Rewards</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item c-1" id="chOne">
+            <section class="chapter-one">
+              <div class="cash-floating dol-4">
+                <img src="assets/images/cash-1.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-5">
+                <img src="assets/images/cash-2.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-6">
+                <img src="assets/images/cash-3.svg" alt="" />
+              </div>
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-xl-8 position-relative">
+                    <div class="ch-one-wrapper">
+                    <div class="chapter-summary chap-1">
+                      <div class="chapter-header">
+                        <h2>Chapter - 1</h2>
+                      </div>
+                      <div class="chap-summary">
+                        <h4>Catching Unicorns</h4>
+                        <p>
+                          <strong>Piips</strong> is done waiting for elusive
+                          opportunities. Instead of chasing after mythical
+                          <strong>"unicorns,"</strong> it’s time to catch them
+                          and make them work for everyone. The mission is
+                          simple: disrupt the system, create real value, and
+                          empower those who’ve been left behind. No more empty
+                          promises— <strong>Piips</strong> is here to turn the
+                          tables.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="chapter-one-animation horse">
+                      <img src="assets/images/horse-pull.gif" alt="" class="position-relative img-fluid z-2">
+                    </div>
+                  </div>
+                    <div class="cash-bund">
+                      <img
+                        src="assets/images/cash-bund.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-4 d-none d-xl-block">
+                    <div class="staking-box">
+                      <div class="box-heading">
+                        <h3>BUY Piips</h3>
+                        <div class="stake-details">
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-basket.svg" alt="" />
+                            </div>
+                            <span>= 500K</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-mine.svg" alt="" />
+                            </div>
+                            <span>= 50M</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="staking-details">
+                        <h3>1 Piips = $0.0003644</h3>
+                        <span class="badge">UNTIL Next PRICE increase</span>
+                      </div>
+                      <div class="timer-wrapper">
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Days</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Hours</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Min</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Sec</span>
+                        </div>
+                      </div>
+                      <p class="all-usd">
+                        USDT Raised: $27,244,567.93 / $27,935,535
+                      </p>
+                      <div class="stake-action-btn">
+                        <button class="action-btn mx-auto">
+                          BUY WITH CARD
+                        </button>
+                        <button class="action-btn mx-auto">
+                          BUY WITH CRYPTO
+                        </button>
+                        <button
+                          class="text-decoration-underline link-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"
+                        >
+                          Don’t have a wallet?
+                        </button>
+                      </div>
+                      <div class="social-link">
+                        <a href="#"
+                          ><img src="assets/images/icon-tele.svg" alt=""
+                        /></a>
+                        <hr />
+                        <a href="#">
+                          <img src="assets/images/icon-x.svg" alt="" />
+                        </a>
+                      </div>
+                      <div class="discount-wrapper">
+                        <img src="assets/images/icon-star.svg" alt="" />
+                        <p class="dic-text">
+                          40% <br />
+                          <span>Rewards</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item c-2" id="chTwo">
+            <section class="chapter-two">
+              <div class="cash-floating dol-1">
+                <img src="assets/images/cash-1.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-2">
+                <img src="assets/images/cash-2.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-3">
+                <img src="assets/images/cash-3.svg" alt="" />
+              </div>
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-xl-8 position-relative">
+                    <div class="ch-one-wrapper">
+                    <div class="chapter-summary chap-2">
+                      <div class="chapter-header">
+                        <h2>Chapter - 2</h2>
+                      </div>
+                      <div class="chap-summary">
+                        <h4>The Piips March</h4>
+                        <p>
+                          <strong>Piips</strong>rallied a crew of ambitious
+                          traders and daring degens, all united by a hunger for
+                          success. With his sharp strategies and fearless calls,
+                          they set out to dominate the bull run, turning
+                          collective ambition into unstoppable momentum..
+                        </p>
+                      </div>
+                    </div>
+                    <div class="pip-march-img">
+                      <img src="assets/images/pip-march.gif" alt="" />
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-xl-4 d-none d-xl-block">
+                    <div class="staking-box">
+                      <div class="box-heading">
+                        <h3>BUY Piips</h3>
+                        <div class="stake-details">
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-basket.svg" alt="" />
+                            </div>
+                            <span>= 500K</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-mine.svg" alt="" />
+                            </div>
+                            <span>= 50M</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="staking-details">
+                        <h3>1 Piips = $0.0003644</h3>
+                        <span class="badge">UNTIL Next PRICE increase</span>
+                      </div>
+                      <div class="timer-wrapper">
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Days</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Hours</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Min</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Sec</span>
+                        </div>
+                      </div>
+                      <p class="all-usd">
+                        USDT Raised: $27,244,567.93 / $27,935,535
+                      </p>
+                      <div class="stake-action-btn">
+                        <button class="action-btn mx-auto">
+                          BUY WITH CARD
+                        </button>
+                        <button class="action-btn mx-auto">
+                          BUY WITH CRYPTO
+                        </button>
+                        <button
+                          class="text-decoration-underline link-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"
+                        >
+                          Don’t have a wallet?
+                        </button>
+                      </div>
+                      <div class="social-link">
+                        <a href="#"
+                          ><img src="assets/images/icon-tele.svg" alt=""
+                        /></a>
+                        <hr />
+                        <a href="#">
+                          <img src="assets/images/icon-x.svg" alt="" />
+                        </a>
+                      </div>
+                      <div class="discount-wrapper">
+                        <img src="assets/images/icon-star.svg" alt="" />
+                        <p class="dic-text">
+                          40% <br />
+                          <span>Rewards</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="market-bar">
+                <img src="assets/images/market.gif" alt="" />
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item c-3" id="chThree">
+            <section class="chapter-three">
+              <div class="plane-animation">
+                <div class="plane-img">
+                  <img
+                    src="assets/images/aero-plane.png"
+                    alt=""
+                    class="plane"
+                  />
+                  <div class="money-fly">
+                    <img
+                      src="assets/images/cash-flying.svg"
+                      alt=""
+                      class="cash-flying"
+                    />
+                    <img
+                      src="assets/images/cash-1.svg"
+                      alt=""
+                      class="cash-flying-item"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-xl-8 position-relative">
+                    <div class="ch-one-wrapper align-items-end flex-wra">
+                    <div class="chapter-summary chap-3 order-1 order-xl-0">
+                      <div class="chapter-header">
+                        <h2>Chapter 3</h2>
+                      </div>
+                      <div class="chap-summary">
+                        <h4>Frog Street Takeover</h4>
+                        <p>
+                          Armed with exclusive insights and a growing army of
+                          dedicated followers, <strong>Piips</strong> and his
+                          crew are ready to outsmart the big players. Together,
+                          they’ll take on the hedge fund elites, using their
+                          collective power to dominate the market and flip the
+                          script on traditional trading. The Frog Street
+                          takeover has begun.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="takeover-img order-0 order-xl-1">
+                      <img
+                        src="assets/images/frog-group.gif"
+                        alt=""
+                        class="position-relative z-2"
+                      />
+                      <img
+                        src="assets/images/shadow.png"
+                        alt=""
+                        class="shadow-sum"
+                      />
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-xl-4 d-none d-xl-block">
+                    <div class="staking-box">
+                      <div class="box-heading">
+                        <h3>BUY Piips</h3>
+                        <div class="stake-details">
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-basket.svg" alt="" />
+                            </div>
+                            <span>= 500K</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-mine.svg" alt="" />
+                            </div>
+                            <span>= 50M</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="staking-details">
+                        <h3>1 Piips = $0.0003644</h3>
+                        <span class="badge">UNTIL Next PRICE increase</span>
+                      </div>
+                      <div class="timer-wrapper">
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Days</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Hours</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Min</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Sec</span>
+                        </div>
+                      </div>
+                      <p class="all-usd">
+                        USDT Raised: $27,244,567.93 / $27,935,535
+                      </p>
+                      <div class="stake-action-btn">
+                        <button class="action-btn mx-auto">
+                          BUY WITH CARD
+                        </button>
+                        <button class="action-btn mx-auto">
+                          BUY WITH CRYPTO
+                        </button>
+                        <button
+                          class="text-decoration-underline link-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"
+                        >
+                          Don’t have a wallet?
+                        </button>
+                      </div>
+                      <div class="social-link">
+                        <a href="#"
+                          ><img src="assets/images/icon-tele.svg" alt=""
+                        /></a>
+                        <hr />
+                        <a href="#">
+                          <img src="assets/images/icon-x.svg" alt="" />
+                        </a>
+                      </div>
+                      <div class="discount-wrapper">
+                        <img src="assets/images/icon-star.svg" alt="" />
+                        <p class="dic-text">
+                          40% <br />
+                          <span>Rewards</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item c-4" id="chFour">
+            <section class="chapter-four">
+              <div class="cash-floating dol-1">
+                <img src="assets/images/cash-1.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-3">
+                <img src="assets/images/cash-3.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-2">
+                <img src="assets/images/cash-2.svg" alt="" />
+              </div>
+              <div class="container h-100">
+                <div class="row h-100">
+                  <div class="col-xl-8 position-relative">
+                    <div class="ch-one-wrapper">
+                    <div class="chapter-summary chap-4">
+                      <div class="chapter-header">
+                        <h2>Chapter - 4</h2>
+                      </div>
+                      <div class="chap-summary">
+                        <h4>Fast Lane to Fortune</h4>
+                        <p>
+                          With Lambos on the horizon and his army of fearless
+                          traders growing, WEPE's influence is soaring. The
+                          choice is clear—join the movement and rise to wealth,
+                          or stay stuck in the old ways. The
+                          <strong>Piips</strong> Army is recruiting. Will you
+                          seize the opportunity?
+                        </p>
+                      </div>
+                    </div>
+                    <div class="car-animation">
+                      <img src="assets/images/car.gif" alt="" class="car" />
+                      <img
+                        src="assets/images/car-shadow.png"
+                        alt=""
+                        class="car-shadow"
+                      />
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-xl-4 d-none d-xl-block">
+                    <div class="staking-box">
+                      <div class="box-heading">
+                        <h3>BUY Piips</h3>
+                        <div class="stake-details">
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-basket.svg" alt="" />
+                            </div>
+                            <span>= 500K</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-mine.svg" alt="" />
+                            </div>
+                            <span>= 50M</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="staking-details">
+                        <h3>1 Piips = $0.0003644</h3>
+                        <span class="badge">UNTIL Next PRICE increase</span>
+                      </div>
+                      <div class="timer-wrapper">
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Days</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Hours</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Min</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Sec</span>
+                        </div>
+                      </div>
+                      <p class="all-usd">
+                        USDT Raised: $27,244,567.93 / $27,935,535
+                      </p>
+                      <div class="stake-action-btn">
+                        <button class="action-btn mx-auto">
+                          BUY WITH CARD
+                        </button>
+                        <button class="action-btn mx-auto">
+                          BUY WITH CRYPTO
+                        </button>
+                        <button
+                          class="text-decoration-underline link-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"
+                        >
+                          Don’t have a wallet?
+                        </button>
+                      </div>
+                      <div class="social-link">
+                        <a href="#"
+                          ><img src="assets/images/icon-tele.svg" alt=""
+                        /></a>
+                        <hr />
+                        <a href="#">
+                          <img src="assets/images/icon-x.svg" alt="" />
+                        </a>
+                      </div>
+                      <div class="discount-wrapper">
+                        <img src="assets/images/icon-star.svg" alt="" />
+                        <p class="dic-text">
+                          40% <br />
+                          <span>Rewards</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="market-bar">
+                <img src="assets/images/market.gif" alt="" />
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item" id="howBuy">
+            <section class="how-to-buy">
+              <div class="cash-floating dol-4">
+                <img src="assets/images/cash-1.svg" alt="" />
+              </div>
+              <div class="cash-floating dol-5">
+                <img src="assets/images/cash-2.svg" alt="" />
+              </div>
+              <div class="container h-100">
+                <h2 class="section-title">How To Buy PIIPS Token</h2>
+                <div class="row h-100">
+                  <div class="order-1 order-lg-0  order-xxl-0 col-lg-6 col-xxl-4 position-relative">
+                    <div class="quick-links-wrapper wrapper-1">
+                      <div class="quick-links">
+                        <p>Dunno about WALLETS?</p>
+                        <a href="#">Click here</a>
+                        <img
+                          src="assets/images/cursor.svg"
+                          alt=""
+                          class="crcr-icon"
+                        />
+                      </div>
+                      <div class="bubble-wrapper">
+                        <div class="bubble-item b-item-1"></div>
+                        <div class="bubble-item b-item-2"></div>
+                      </div>
+                    </div>
+                    <div class="sofa-animation">
+                      <img
+                        src="assets/images/sofa.gif"
+                        alt=""
+                        class="img-fluid position-relative z-2"
+                      />
+                      <img
+                        src="assets/images/shadow.svg"
+                        alt=""
+                        class="sofa-shadow"
+                      />
+                    </div>
+                  </div>
+                  <div class="order-0  order-lg-1 order-xxl-1  col-lg-6 col-xxl-4">
+                    <div class="token-box">
+                      <div class="token-address-wrapper">
+                        TOKEN ADDRESS
+                        <div class="token-address">
+                          <span
+                            >78120xSDS153235Wssag12d5f104524d20d2as4dff74bda</span
+                          >
+                          <button>
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="token-qty">
+                        TOKEN Supply
+                        <span class="d-block">200,000,000,000 Piips</span>
+                      </div>
+                    </div>
+                    <div class="accordion">
+                      <div class="accordion-item">
+                        <button class="accordion-header">
+                          <span class="topic hb-title topi-1">Get Wallet</span>
+                          <div class="down-ind">
+                            <img src="assets/images/down-icon.svg" alt="" />
+                          </div>
+                        </button>
+                        <div class="accordion-content always-visible">
+                          <p>
+                            Piips Army already have wallets? 🤔 But if not, try
+                            MetaMask or Best Wallet. You can even buy $WEPE
+                            directly in ‘Upcoming Tokens’ in <a href="#"
+                              >Best Wallet.</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <button class="accordion-header">
+                          <span class="topic hb-title topi-2">Buy & Stake</span>
+                          <div class="down-ind">
+                            <img src="assets/images/down-icon.svg" alt="" />
+                          </div>
+                        </button>
+                        <div class="accordion-content">
+                          <p>
+                            Piips Army already have wallets? 🤔 But if not, try
+                            MetaMask or Best Wallet. You can even buy $WEPE
+                            directly in ‘Upcoming Tokens’ in Best Wallet.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <button class="accordion-header">
+                          <span class="topic hb-title topi-3">Fund Wallet</span>
+                          <div class="down-ind">
+                            <img src="assets/images/down-icon.svg" alt="" />
+                          </div>
+                        </button>
+                        <div class="accordion-content">
+                          <p>
+                            Piips Army already have wallets? 🤔 But if not, try
+                            MetaMask or Best Wallet. You can even buy $WEPE
+                            directly in ‘Upcoming Tokens’ in Best Wallet.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 d-none d-xxl-block order-3">
+                    <div class="staking-box">
+                      <div class="box-heading">
+                        <h3>BUY Piips</h3>
+                        <div class="stake-details">
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-basket.svg" alt="" />
+                            </div>
+                            <span>= 500K</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-mine.svg" alt="" />
+                            </div>
+                            <span>= 50M</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="staking-details">
+                        <h3>1 Piips = $0.0003644</h3>
+                        <span class="badge">UNTIL Next PRICE increase</span>
+                      </div>
+                      <div class="timer-wrapper">
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Days</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Hours</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Min</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Sec</span>
+                        </div>
+                      </div>
+                      <p class="all-usd">
+                        USDT Raised: $27,244,567.93 / $27,935,535
+                      </p>
+                      <div class="stake-action-btn">
+                        <button class="action-btn mx-auto">
+                          BUY WITH CARD
+                        </button>
+                        <button class="action-btn mx-auto">
+                          BUY WITH CRYPTO
+                        </button>
+                        <button
+                          class="text-decoration-underline link-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"
+                        >
+                          Don’t have a wallet?
+                        </button>
+                      </div>
+                      <div class="social-link">
+                        <a href="#"
+                          ><img src="assets/images/icon-tele.svg" alt=""
+                        /></a>
+                        <hr />
+                        <a href="#">
+                          <img src="assets/images/icon-x.svg" alt="" />
+                        </a>
+                      </div>
+                      <div class="discount-wrapper">
+                        <img src="assets/images/icon-star.svg" alt="" />
+                        <p class="dic-text">
+                          40% <br />
+                          <span>Rewards</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item" id="faq">
+            <section class="faq-page">
+              <div class="cash-floating dol-1">
+                <img src="assets/images/cash-1.svg" alt="" />
+              </div>
+              <div class="container h-100">
+                <h2 class="section-title">Piips Token FAQs</h2>
+                <div class="row h-100 position-relative z-2">
+                  <div class="col-lg-6 col-xxl-4 position-relative">
+                    <div class="quick-links-wrapper float-end wrapper-2">
+                      <div class="quick-links">
+                        "If I had the choice to be a wealthy PIIPS or a poor one, I'd always choose wealth!"
+                      </div>
+                      <div class="bubble-wrapper start-0">
+                        <div class="bubble-item b-item-3"></div>
+                        <div class="bubble-item b-item-4"></div>
+                      </div>
+                    </div>
+                    <div class="rocket-animation">
+                      <img src="assets/images/rocket.gif" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xxl-4 position-relative">
+                    <div class="faq-wrapper">
+                      <div class="accordion mb-4">
+                        <div class="accordion-item">
+                          <button class="accordion-header">
+                            <span class="topic faq-ttl"
+                              >What is Piips Token?</span
+                            >
+                            <div class="down-ind">
+                              <img src="assets/images/down-icon.svg" alt="" />
+                            </div>
+                          </button>
+                          <div class="accordion-content always-visible">
+                            <p>
+                              PIIPS Token is the meme coin of Wall Street Pepe,
+                              who’s tired of whale groups controlling the crypto
+                              markets. So he’s creating his own - the PIIPS
+                              Army! PIIPS makes the calls that turn frogs into
+                              whales, transforming your trading game.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <button class="accordion-header">
+                            <span class="topic faq-ttl"
+                              >When do I get my tokens?</span
+                            >
+                            <div class="down-ind">
+                              <img src="assets/images/down-icon.svg" alt="" />
+                            </div>
+                          </button>
+                          <div class="accordion-content">
+                            <p>
+                              PIIPS Token is the meme coin of Wall Street Pepe,
+                              who’s tired of whale groups controlling the crypto
+                              markets. So he’s creating his own
+                            </p>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <button class="accordion-header">
+                            <span class="topic faq-ttl"
+                              >Why join the Piips Army?</span
+                            >
+                            <div class="down-ind">
+                              <img src="assets/images/down-icon.svg" alt="" />
+                            </div>
+                          </button>
+                          <div class="accordion-content">
+                            <p>
+                              PIIPS Token is the meme coin of Wall Street Pepe,
+                              who’s tired of whale groups controlling the crypto
+                              markets. So he’s creating his own
+                            </p>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <button class="accordion-header">
+                            <span class="topic faq-ttl"
+                              >How do I know Piips token is safe?</span
+                            >
+                            <div class="down-ind">
+                              <img src="assets/images/down-icon.svg" alt="" />
+                            </div>
+                          </button>
+                          <div class="accordion-content">
+                            <p>
+                              PIIPS Token is the meme coin of Wall Street Pepe,
+                              who’s tired of whale groups controlling the crypto
+                              markets. So he’s creating his own
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="faq-car-animation">
+                      <img
+                        src="assets/images/car.gif"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-none d-xxl-block col-xxl-4">
+                    <div class="staking-box">
+                      <div class="box-heading">
+                        <h3>BUY Piips</h3>
+                        <div class="stake-details">
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-basket.svg" alt="" />
+                            </div>
+                            <span>= 500K</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="basket-details">
+                            <div class="basket-icon">
+                              <img src="assets/images/fav-icon.png" alt="" />
+                              <img src="assets/images/icon-mine.svg" alt="" />
+                            </div>
+                            <span>= 50M</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="staking-details">
+                        <h3>1 Piips = $0.0003644</h3>
+                        <span class="badge">UNTIL Next PRICE increase</span>
+                      </div>
+                      <div class="timer-wrapper">
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Days</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Hours</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Min</span>
+                        </div>
+                        <div class="timer-box">
+                          <span class="rn-time">00</span>
+                          <span class="rn-smbl">Sec</span>
+                        </div>
+                      </div>
+                      <p class="all-usd">
+                        USDT Raised: $27,244,567.93 / $27,935,535
+                      </p>
+                      <div class="stake-action-btn">
+                        <button class="action-btn mx-auto">
+                          BUY WITH CARD
+                        </button>
+                        <button class="action-btn mx-auto">
+                          BUY WITH CRYPTO
+                        </button>
+                        <button
+                          class="text-decoration-underline link-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"
+                        >
+                          Don’t have a wallet?
+                        </button>
+                      </div>
+                      <div class="social-link">
+                        <a href="#"
+                          ><img src="assets/images/icon-tele.svg" alt=""
+                        /></a>
+                        <hr />
+                        <a href="#">
+                          <img src="assets/images/icon-x.svg" alt="" />
+                        </a>
+                      </div>
+                      <div class="discount-wrapper">
+                        <img src="assets/images/icon-star.svg" alt="" />
+                        <p class="dic-text">
+                          40% <br />
+                          <span>Rewards</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="f-quick-links">
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-4"
+                      >
+                        <a href="#" class="q-nav-link">Cookies</a>
+                        <a href="#" class="q-nav-link">T&Cs</a>
+                        <a href="#" class="q-nav-link">Privacy Policy</a>
+                      </div>
+                      <p class="text-center">
+                        Disclaimer: PIIPS, the Wall Street Pepe, is a satirical
+                        meme coin inspired by risky investing themes in finance
+                        and crypto. Jump in, but don’t risk everything. Bold
+                        claims and confidence are not financial advice. Always
+                        do your own research (DYOR).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="market-bar d-none d-lg-block">
+                <img src="assets/images/market.gif" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="marquee-container">
+        <div class="marquee">
+          <div class="news-item">
+            <span>BREAKING:</span> Piips Presale Is Cooking - Buy At Floor
+            Before Price Increase!
+            <div class="marque-img">
+              <img src="assets/images/marque-img.png" alt="" />
+            </div>
+          </div>
+          <div class="news-item">
+            <span>BREAKING:</span> Piips Presale Is Cooking - Buy At Floor
+            Before Price Increase!
+            <div class="marque-img">
+              <img src="assets/images/marque-img.png" alt="" />
+            </div>
+          </div>
+          <div class="news-item">
+            <span>BREAKING:</span> Piips Presale Is Cooking - Buy At Floor
+            Before Price Increase!
+            <div class="marque-img">
+              <img src="assets/images/marque-img.png" alt="" />
+            </div>
+          </div>
+          <div class="news-item">
+            <span>BREAKING:</span> Piips Presale Is Cooking - Buy At Floor
+            Before Price Increase!
+            <div class="marque-img">
+              <img src="assets/images/marque-img.png" alt="" />
+            </div>
+          </div>
+          <div class="news-item">
+            <span>BREAKING:</span> Piips Presale Is Cooking - Buy At Floor
+            Before Price Increase!
+            <div class="marque-img">
+              <img src="assets/images/marque-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <div class="prv-button">
+        <img src="assets/images/button.png" alt="" />
+      </div>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <div class="prv-button">
+        <img src="assets/images/button-next.png" alt="" />
+      </div>
+    </button>
+    </main>
+    <!-- Modal=========== -->
+    <div class="modal fade" id="buyPiips" tabindex="-1" aria-labelledby="buyPiipsLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="buyPiipsLabel">Connect Wallet</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <div class="wallet-group">
+            <a href="#" class="wallet-item">
+              <div class="wallet-img">
+                <img src="assets/images/icon-metamask.png" alt="">
+              </div>
+              <p class="wallet-name">Metamask</p>
+            </a>
+            <a href="#" class="wallet-item">
+              <div class="wallet-img">
+                <img src="assets/images/icon-wall.png" alt="">
+              </div>
+              <p class="wallet-name">Wallet Connect</p>
+            </a>
+            <a href="#" class="wallet-item">
+              <div class="wallet-img">
+                <img src="assets/images/icon-coin-base.png" alt="">
+              </div>
+              <p class="wallet-name">Coinbase Wallet</p>
+            </a>
+          </div>
+          <button class="white-btn" type="button" data-bs-toggle="modal" data-bs-target="#needWallet"><span><img src="assets/images/icon-wallet.svg" alt=""></span> I don’t have a wallet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============== -->
+    <div class="modal fade" id="needWallet" tabindex="-1" aria-labelledby="needWalletLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content gray-modal">
+          <div class="modal-header">
+            <h1 class="modal-title" id="needWalletLabel">Need Wallet?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <div class="qr-code">
+            <img src="assets/images/icon-qr.svg" alt="" class="img-fluid">
+          </div>
+          <div class="instroction">
+            <div class="int-item">
+              <span class="int-srs">1</span> Scan the QR  code to download App 
+            </div>
+            <div class="int-item">
+              <span class="int-srs">2</span> Create your account 
+            </div>
+            <div class="int-item">
+              <span class="int-srs">3</span> Buy in-app with card or cryptyo 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
